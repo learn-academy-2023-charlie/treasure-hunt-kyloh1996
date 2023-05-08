@@ -1,10 +1,22 @@
 import React from "react"
 
-const Square = () => {
+const Square = (props) => {
   return (
-    <>
-      <div className="square"></div>
-    </>
+    
+    <div id="grid">
+    {props.board.map((value,index) => {
+      return (
+        <div 
+          id="square" 
+          key = {index}
+          onClick = {() => props.handleClick(index)}
+        >
+          {value}
+        </div>
+      )
+    })}
+    </div>
+    
   )
 }
 export default Square

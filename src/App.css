@@ -1,9 +1,37 @@
 h1 {
   text-align: center;
+  font-family:'Times New Roman', Times, serif;
+  font-size: xx-large;
+  font-weight: bolder;
+  text-shadow: 6px 6px 6px;
+
 }
 
-.square {
+#square {
   height: 200px;
   width: 200px;
   border: 1px solid black;
+  font-size: 160px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+#grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 620px;
+  margin: 0 auto
+}
+
+.reset{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+ #counter{
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
